@@ -11,6 +11,7 @@ import { Single } from "./pages/Single";
 import { Demo } from "./pages/Demo";
 import { Starwars } from "./pages/Starwars.jsx";
 import { DetailPeople } from "./pages/DetailPeople.jsx";
+import { Info } from "./pages/Info.jsx";
 
 export const router = createBrowserRouter(
     createRoutesFromElements(
@@ -29,6 +30,7 @@ export const router = createBrowserRouter(
         <Route path="/demo" element={<Demo />} />
         <Route path="/starwars" element={<Starwars />} />
         <Route path="/character/:uid" element={ <DetailPeople />} /> 
+        <Route path="/info" element={<Info />} />
       </Route>
     )
 );

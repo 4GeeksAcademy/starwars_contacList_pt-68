@@ -17,8 +17,13 @@ export const Navbar = () => {
 						<button className="btn btn-danger">Starwars</button>
 					</Link>
 
+					<Link to="/info">
+						<button className="btn btn-primary">Info</button>
+					</Link>
+
 
 				</div>
+				<button>favo</button>
 			</div>
 		</nav>
 	);
