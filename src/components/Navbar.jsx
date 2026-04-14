@@ -21,6 +21,10 @@ export const Navbar = () => {
 						<button className="btn btn-primary">Info</button>
 					</Link>
 
+					<Link to="/add_contact">
+						<button className="btn btn-warning">Agregar Contacto </button>
+					</Link>
+
 
 				</div>
 				<button>favo</button>

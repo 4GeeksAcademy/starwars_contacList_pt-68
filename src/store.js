@@ -15,7 +15,8 @@ export const initialStore = () => {
     ],
     character: [],
     favoritos: [],
-    saludo: "Hola desde Store"
+    saludo: "Hola desde Store",
+    contacts:[]
   }
 }
 
@@ -47,13 +48,16 @@ export default function storeReducer(store, action = {}) {
       }
     //////////////////////////////////
     case "change_saludo":
-      const {message} = action.payload
-      return{
+      const { message } = action.payload
+      return {
         // ...store, saludo : "saludo desde el dispatch!"
         ...store, saludo: message
       }
-
-
+    ////////////////////////////////////
+    case "add_contact":
+      return{
+        ...store, contacts: [...store.contacts, action.payload]
+      }
 
     /////////////////////////////////
 
